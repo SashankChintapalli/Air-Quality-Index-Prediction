@@ -1,50 +1,51 @@
-🌍 Air Quality Prediction using PM2.5 
-📌 Project Overview
+**🌍 Air Quality Prediction using PM2.5**
+
+**📌 Project Overview**
 
 Air pollution is one of the most critical issues in India, and PM2.5 (particulate matter ≤ 2.5 microns) is among the most harmful pollutants.
 This project predicts PM2.5 concentration levels for Bangalore (2013–2018) using climatic and meteorological features such as temperature, rainfall, wind speed, and more.
 
 We trained multiple machine learning regression models and deployed the best-performing model as a REST API using Flask.
 
-📊 Dataset
+**📊 Dataset**
 
-Climate Data Source: Tutiempo.net
+**Climate Data Source**: Tutiempo.net
 
-PM2.5 Data Source: Scraped via BeautifulSoup & merged with climate dataset
+**PM2.5 Data Source**: Scraped via BeautifulSoup & merged with climate dataset
 
-Region: Bangalore, India
+**Region**: Bangalore, India
 
-Years Covered: 2013 – 2018
+**Years Covered**: 2013 – 2018
 
-Features (Independent Variables)
+**Features (Independent Variables)**
 
-AT → Average annual temperature
+**AT** → Average annual temperature
 
-TM → Annual average maximum temperature
+**TM** → Annual average maximum temperature
 
-Tm → Annual average minimum temperature
+**Tm** → Annual average minimum temperature
 
-PP → Annual precipitation (rain/snow)
+**PP** → Annual precipitation (rain/snow)
 
-V → Annual average wind speed
+**V** → Annual average wind speed
 
-RA → Number of days with rain
+**RA** → Number of days with rain
 
-SN → Number of days with snow
+**SN** → Number of days with snow
 
-Target Variable
+**Target Variable**
 
 PM2.5 → Annual average particulate matter concentration
 
-🛠️ Technologies Used
+**🛠️ Technologies Used**
 
-Programming Language: Python
+**Programming Language**: Python
 
-IDE: PyCharm
+**IDE**: PyCharm
 
-Notebook: Google Colab (model training & testing)
+**Notebook**: Google Colab (model training & testing)
 
-ML Models:
+**ML Models:**
 
 Linear Regression
 
@@ -58,9 +59,9 @@ Extra Trees Regressor
 
 Decision Tree Regressor
 
-Backend: Flask (REST API for predictions)
+**Backend**: Flask (REST API for predictions)
 
-⚙️ Methodology
+**⚙️ Methodology**
 
 Data Collection → Web scraping with BeautifulSoup
 
@@ -74,22 +75,22 @@ Model Evaluation → MSE, RMSE, R² comparison
 
 Deployment → Best model exported as .pkl and served via Flask API
 
-📈 Results
+**📈 Results**
 
-Best Model: (e.g., Extra Trees Regressor, R² ≈ 0.92)
+**Best Model**: (e.g., Extra Trees Regressor, R² ≈ 0.92)
 
-Key Findings:
+**Key Findings**:
 
 Wind speed & rainfall help reduce PM2.5 levels.
 
 Temperature variations significantly influence PM2.5.
 
-🔮 Future Improvements
+**🔮 Future Improvements**
 
-Extend dataset with daily/hourly data
+Extending dataset with daily/hourly data
 
-Add more pollutants (PM10, NO₂, SO₂, O₃, CO)
+Adding more pollutants (PM10, NO₂, SO₂, O₃, CO)
 
-Deploy on cloud (Heroku / GCP / AWS)
+Deploingy on cloud (Heroku / GCP / AWS)
 
-Build a dashboard (Streamlit / Flask + React) for real-time monitoring
+Building a dashboard (Streamlit / Flask + React) for real-time monitoring
